@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>home - Bootstrap 5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-5.0.0-beta1.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/LineIcons.2.0.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/tiny-slider.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/lindy-uikit.css' %}"/>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================= preloader end ========================= -->
+
+    <!-- ========================= hero-section-wrapper-5 start ========================= -->
+    <section id="home" class="hero-section-wrapper-5">
+
+      <!-- ========================= header-6 start ========================= -->
+      <header class="header header-6">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                 <img src="{% static 'assets/media/student.png' %}" alt="logoo" height="100px" width="100px">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+  
+                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                    <ul id="nav6" class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="page-scroll active" href="/">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="/register">REGISTRATION</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="/login">LOGIN</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <!-- <div class="header-action d-flex">
+                    <a href="#0"> <i class="lni lni-cart"></i> </a>
+                    <a href="#0"> <i class="lni lni-alarm"></i> </a>
+                  </div> -->
+                  <!-- navbar collapse -->
+                </nav>
+                <!-- navbar -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- navbar area -->
+      </header>
+      <!-- ========================= header-6 end ========================= -->
+
+      <!-- ========================= hero-5 start ========================= -->
+      <div class="hero-section hero-style-5 img-bg" style="background-image: url('assets/media/hero/hero-5/hero-bg.svg')">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero-content-wrapper">
+                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">WELCOME TO THE STUDENT MANAGEMENT SYSTEM</h2>
+                <p class="mb-30 wow fadeInUp" data-wow-delay=".4s">Please login and enjoys our website</p>
+                <!-- <a href="#0" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".6s">Get Started <i class="lni lni-chevron-right"></i> </a> -->
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-end">
+              <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
+                <img src="{% static 'assets/media/hero/hero-5/hero-img.svg' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================= hero-5 end ========================= -->
+
+    </section>
+    <!-- ========================= hero-section-wrapper-6 end ========================= -->
+
+    <!-- ========================= feature style-5 start ========================= -->
+    <!-- ========================= feature style-5 end ========================= -->
+
+    <!-- ========================= about style-4 start ========================= -->
+    
+    <!-- ========================= about style-4 end ========================= -->
+
+    <!-- ========================= pricing style-4 start ========================= -->
+    
+    <!-- ========================= pricing style-4 end ========================= -->
+
+    <!-- ========================= contact-style-3 start ========================= -->
+    <!-- <section id="contact" class="contact-section contact-style-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
+            <div class="section-title text-center mb-50">
+              <h3 class="mb-15">Get in touch</h3>
+              <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form-wrapper">
+              <form action="" method="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Name">
+                      <i class="lni lni-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Email">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="number" name="number" class="form-input" placeholder="Number">
+                      <i class="lni lni-phone"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
+                      <i class="lni lni-text-format"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <textarea name="message" id="message" class="form-input" placeholder="Message" rows="6"></textarea>
+                      <i class="lni lni-comments-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-button">
+                      <button type="submit" class="button"> <i class="lni lni-telegram-original"></i> Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div> -->
+
+          
+    <!-- ========================= contact-style-3 end ========================= -->
+
+    <!-- ========================= clients-logo start ========================= -->
+    
+    <!-- ========================= clients-logo end ========================= -->
+
+    <!-- ========================= footer style-4 start ========================= -->
+    
+    <!-- ========================= footer style-4 end ========================= -->
+
+    <!-- ========================= scroll-top start ========================= -->
+    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+    <!-- ========================= scroll-top end ========================= -->
+		
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{% static 'assets/js/bootstrap-5.0.0-beta1.min.js' %}"></script>
+    <script src="{% static 'assets/js/tiny-slider.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+</html>

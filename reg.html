@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>registration - Bootstrap 5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-5.0.0-beta1.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/LineIcons.2.0.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/tiny-slider.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/lindy-uikit.css' %}"/>
+  </head>
+  <body>
+  <header class="header header-6">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                 <img src=" {% static 'assets/media/student.png' %}" alt="logoo" height="100px" width="100px">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+  
+                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                    <ul id="nav6" class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="page-scroll " href="/">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll active" href="/register">REGISTRATION</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="/login">LOGIN</a>
+                      </li>
+                    </ul>
+                  </div>
+                  </nav>
+                  </div>
+                  </div></div></div></header>
+
+        <!-- -----------------card-------------------------------- -->
+
+        <div class="card bg-primary" style="width: 450px; margin: auto;">
+  <div class="card-body">
+
+    <h5 class="card-title text-center mb-4 text-white">REGISTRATION FORM</h5>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="form-label text-white">Name:</label>
+        </div>
+        <div class="col-8">
+          <input type="text" name="name" class="form-control" placeholder="Enter your name">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="form-label text-white">Email:</label>
+        </div>
+        <div class="col-8">
+          <input type="email" name="email" class="form-control" placeholder="Enter your email">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="text-white">Password:</label>
+        </div>
+        <div class="col-8">
+          <input type="password" name="password" class="form-control" placeholder="Enter password">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="text-white">Confirm Password:</label>
+        </div>
+        <div class="col-8">
+          <input type="password" name="conf" class="form-control" placeholder="Re-enter password">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="text-white">Address:</label>
+        </div>
+        <div class="col-8">
+          <textarea name="address" class="form-control" placeholder="Enter your address"></textarea>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="text-white">Phone:</label>
+        </div>
+        <div class="col-8">
+          <input type="number" name="phno" class="form-control" placeholder="Enter phone number">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4">
+          <label class="text-white">Guardian:</label>
+        </div>
+        <div class="col-8">
+          <input type="text" name="gname" class="form-control" placeholder="Guardian name">
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-4">
+          <label class="text-white">Image:</label>
+        </div>
+        <div class="col-8">
+          <input type="file" name="image" class="form-control">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 bg-dark" style="border: none;">Register</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+                  
+       
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
