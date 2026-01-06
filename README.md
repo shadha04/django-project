@@ -1,1 +1,1 @@
-# django-project
+Student management  system (django web application)
